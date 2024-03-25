@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8" />
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Description for search engines -->
+    <meta name="description" content="Indulge in the sweetness of javaScript with my milkshake-themed introduction!"/>
+    <!-- No index, no follow for search engines -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Title of the webpage -->
+    <title>Milkshake JavaScript Delight</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Add our fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <!-- JavaScript file -->
+    <script type="text/JavaScript" src="./js/class-js.js"></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <div>
+        <!-- Logo linking to homepage -->
+        <a href="index.html"
+          ><img src="./img/download.png" alt="our milkshake logo"
+        /></a>
+      </div>
+      <!-- Navigation menu -->
+      <nav>
+        <menu>
+          <!-- Menu items -->
+          <li><a href="#ex1">Sip & Start</a></li>
+          <li><a href="#ex2">Whipped Variables</a></li>
+          <li><a href="#ex3">Events on a Straw</a></li>
+        </menu>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <!-- Section for main heading -->
+      <section class="masthead">
+        <div>
+          <!-- Main heading -->
+          <h1>Milkshake Delight</h1>
+        </div>
+      </section>
+      <!-- Section for customizing milkshake -->
+      <section id="ex1">
+        <h2>Customize Your Milkshake</h2>
+        <!-- Milkshake customization form -->
+        <form id="milkshakeForm">
+          <!-- Milk type selection -->
+          <label for="milkType">Milk Type:</label>
+          <select id="milkType" name="milkType">
+          <option value="Regular">Regular</option>
+          <option value="Almond">Almond Milk</option>
+          <option value="Coconut">Coconut Milk</option>
+          </select><br /><br/>
+          <!-- Size selection -->
+          <label for="size">Size:</label>
+          <input type="radio" id="small" name="size" value="Small" />
+          <label for="small">Small</label>
+          <input type="radio" id="medium" name="size" value="Medium" />
+          <label for="medium">Medium</label>
+          <input type="radio" id="large" name="size" value="Large" />
+          <label for="large">Large</label><br /><br />
+          <!-- Ice-cream flavor selection -->
+          <label for="iceCreamFlavor">Ice-Cream Flavor:</label>
+          <select id="iceCreamFlavor" name="iceCreamFlavor">
+          <option value="Vanilla">Vanilla</option>
+          <option value="Strawberry">Strawberry</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Choco-Mint">Choco-Mint</option>
+          <option value="Strawberry">Strawberry</option>
+          </select><br /><br />
+          <!-- Toppings selection -->
+          <label for="toppings">Toppings:</label><br />
+          <input
+            type="checkbox"
+            id="whippedCream"
+            name="toppings"
+            value="Whipped Cream"
+          />
+          <label for="whippedCream">Whipped Cream</label>
+          <input
+            type="checkbox"
+            id="chocolateChips"
+            name="toppings"
+            value="Chocolate Chips"
+          />
+          <label for="chocolateChips">Chocolate Chips</label>
+          <input
+            type="checkbox"
+            id="sprinkles"
+            name="toppings"
+            value="Sprinkles"
+          />
+          <label for="sprinkles">Sprinkles</label><br /><br />
+          <!-- Button to calculate bill -->
+          <button type="button" onclick="calculateBill()">
+            Calculate Bill
+          </button>
+        </form>
+      </section>
+      <!-- Other sections -->
+      <section id="ex2"></section>
+      <section id="ex3">
+        <h2>Your Bill</h2>
+        <!-- Display bill -->
+        <div id="bill"></div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer>
+      <div>
+        <!-- Logo linking to homepage -->
+        <a href="index.html"
+          ><img src="./img/image.jpeg" alt="milkshake logo"
+        /></a>
+      </div>
+      <div>
+        <h6>Milkshake Me!</h6>
+        <!-- Footer text -->
+        <p>
+          Indulge in the sweetness of JavaScript with our milkshake-themed
+          introduction! Sip, slurp, and code your way to delicious experiences.
+        </p>
+      </div>
+      <div>
+        <h6>Contact Us</h6>
+        <!-- Contact form -->
+        <form action="somefile.php" method="post">
+          <p><input type="text" name="name" placeholder="Your Name" /></p>
+          <p><input type="email" name="email" placeholder="Your Email" /></p>
+          <textarea placeholder="Your Message"></textarea>
+          <br />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
